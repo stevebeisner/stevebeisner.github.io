@@ -35,7 +35,7 @@ html {
 
                 .item-content {
                   flex: 0 0 70%;
-                  padding: 1em;
+                  padding: 2em;
                   color: black;
                   background: inherit; }
 
@@ -44,6 +44,9 @@ html {
 
                     .item-content a {
                       text-decoration: none; }
+
+                      .item-content img {
+                        width: 100%; }
 nav {
   display: flex;
   width: 94%;
