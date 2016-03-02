@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- page.tm
+  Left sidebar area with links to posts
+  Right main area for the page content.
+
+  Can be used for any page where we want the default sidebar
+  index in the sidebar.
+-->
+<!-- This is head_incl.tm, for things like meta tags, favicon, CSS links, script tags, etc. -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>All Saints Day at the Maple Leaf Bar</title>
+
+<script type="text/javascript">
+  // Do something interesting and useful here.
+</script>
+
+<!-- favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+<!--
+  ***
+  ***  CSS Stylesheets
+  ***
+-->
+<link rel="stylesheet" href="/resources/css/normalize.css"/>
+<link rel="stylesheet" href="/resources/css/main.css"/>
+
+</head>
+
+<body>
+    <script>
+var page = {"page_id": "2015-11-11-all-saints-day-at-the-maple-leaf-bar", "summary": "The afternoon before I leave New Orleans, I arrive at the Maple Leaf \nminutes after three, the start time of Nancy Harris's Sunday readings, \nbut there's no sign of poetry. For the moment the poets have joined \nthe football fans. The Saints are playing the Giants in the Super Dome, \nit's All Saints Day, and the stars are aligned, as they often are for \nNew Orleans, aiming towards something cosmic.", "format": "md", "date": ["2015", "11", "11"], "tags": ["places", "life", "new orleans"], "author": "Steve Beisner", "page_type": "post", "template": "page.tm", "title": "All Saints Day at the Maple Leaf Bar"};
+</script>
+
+<div class="row-nowrap">
+  <div style="flex: 0 0 3%"></div>
+  <div id="banner" style="flex: 0 1 100%">
+    <!-- image goes here -->
+  </div>
+  <div style="flex: 0 0 3%"></div>
+</div>
+
+<div class="row-nowrap" >
+  <div style="flex: 0 0 3%"></div>
+  <h3 class="item-fixed">
+    Steve Beisner's Blog
+  </h3>
+  <div style="flex: 0 1 100%"></div>
+  <h3 class="item-fixed">
+    Writing, Technology, Places, Life
+
+  </h3>
+  <div style="flex: 0 0 3%"></div>
+</div>
+
+
+<nav>
+  <a href="/home">Home</a>
+  <a href="/about">About</a>
+  <a href="/tagged-by#new orleans">New Orleans Posts</a>
+  <a href="/tagged-by#tech">Tech Posts</a>
+</nav>  
+
+
+<script>
+    var img = 'foggy_forest.jpg';
+    var img_by_tag = {
+      '*no*tag*':       ['foggy_forest.jpg', 'riverFogPano.jpg', 
+                         'fountainpen.jpg'],
+      'life':           ['foggy_forest.jpg', 'riverFogPano.jpg'],
+      'new orleans':    ['Esplanade-pano.jpg', 'MississippiNewOrleans.jpg',
+                         'TreeOfLifeAudubonParkPano2.jpg'],
+      'santa barbara':  ['cropped-SantaBarbaraPano.jpg'],
+      'tech':           ['computerMuseumPano.jpg','Univac9400pano.jpg'],
+      'writing':        ['typewritertype.jpg','fountainpen.jpg']
+    }
+    var pageTag = '*no*tag*';
+    console.log('page.tags=' + JSON.stringify(page.tags));
+    if( page.tags.length) {
+      pageTag = page.tags[ Math.floor(page.tags.length*Math.random()) ];
+      if( ! (pageTag in img_by_tag) ) {
+        pageTag = '*no*tag*';
+      }
+    }
+    console.log('pageTag=' + JSON.stringify(pageTag));
+    var imgs = img_by_tag[ pageTag];
+    console.log('imgs=' + JSON.stringify(imgs))
+    img = imgs[ Math.floor(imgs.length*Math.random()) ];
+    console.log('img=' + JSON.stringify(img));
+    document.getElementById('banner').innerHTML = 
+      '<img src="/resources/images/' + img + '" style="width:100%" />';
+</script>
+
+    <h1 id="page_title" class="center-block">All Saints Day at the Maple Leaf Bar</h1>
+
+    <div class="row-nowrap" >
+      <div style="flex: 0 0 3%"></div>
+ 
+      <h3 class="item-fixed">
+        by Steve Beisner
+      </h3>
+ 
+      <div style="flex: 0 1 100%"></div>
+
+      <h3 class="item-fixed">
+        tags: places, life, new orleans
+      </h3>
+
+      <div style="flex: 0 0 3%"></div>
+    </div>
+
+    <div class="row-nowrap">
+      <div class="item-sidebar">
+                  <h4>Recent Posts</h4>
+              <h5>
+                <a href="/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/11/11
+                </span>
+              </h5>
+              <h5>
+                <a href="/2015-10-30-the-new-old-new-orleans-los-po-boy-citos/">The New Old New Orleans: Los Po-Boy Citos</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/10/30
+                </span>
+              </h5>
+              <h5>
+                <a href="/2015-07-03-sounds-of-new-orleans-from-anywhere/">Sounds Of New Orleans From Anywhere</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/07/03
+                </span>
+              </h5>
+              <h5>
+                <a href="/2015-06-21-my-computer-history-the-ibm-7094/">My Computer History the IBM 7094</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/06/21
+                </span>
+              </h5>
+
+
+          <h4>Pages By Tags</h4>
+            <h5 style="display:inline">
+              <a href="/tagged-by#life">
+                life&nbsp;(4)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+            <h5 style="display:inline">
+              <a href="/tagged-by#new&nbsp;orleans">
+                new&nbsp;orleans&nbsp;(7)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+            <h5 style="display:inline">
+              <a href="/tagged-by#places">
+                places&nbsp;(6)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+            <h5 style="display:inline">
+              <a href="/tagged-by#tech">
+                tech&nbsp;(2)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+            <h5 style="display:inline">
+              <a href="/tagged-by#writing">
+                writing&nbsp;(3)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+
+
+          <h4>Related or Affiliated Sites:</h4>
+          <p>
+            <a href="http://inkbytepress.com">
+              Ink Byte Press
+            </a>
+          </p>
+          <p>
+            <a href="http://melindapalacio.com">
+              Melinda Palacio's Author Web Site
+            </a>
+          </p>
+
+
+          <h4>Steve Beisner:</h4>
+          <p>Steve Beisner can usually be found in New Orleans LA or Santa
+          Barbara CA, writing software, poetry, or fiction.  You can contact
+          him by email with an address constructed as follows: name is 
+          <b>beisner</b>, the part after the at symbol is 
+          <b>alum.mit.edu</b>.</p>
+      </div>
+
+      <div class="item-content">
+          <p>The afternoon before I leave New Orleans, I arrive at the Maple Leaf minutes after three, the start time of Nancy Harris's Sunday readings, but there's no sign of poetry. For the moment the poets have joined the football fans. 
+The Saints are playing the Giants in the Super Dome, it's All Saints Day, and the stars are aligned, as they often are for New Orleans, aiming towards something cosmic.</p>
+<p>It's been raining all day, so the whole city and all it contains feels like a giant sponge that can hold no more water, but waits for some momentous squeeze to release the deluge.</p>
+<p>My own interest in football lies mostly dormant, subdued by years of hype and boredom. Beautiful bartender Ragan serves me a drink, and I carry it outside to escape the din, and stand on the curb in front of the Leaf to look up and down this iconic New Orleans street in relative silence. Oak Street ends six blocks away in the restful, damp green of the Mississippi River levee. In the other direction and a little closer, a Carrolton Avenue street car passes, clicking quietly along the tracks with occasional sparks from the wires overhead. The peaceful street and the cacophony of the bar make a magnetic field whose poles pull my random thoughts into alignment, pushing me towards the philosophical.</p>
+<p>Back inside the crowd is subdued. The Saints trail badly, have lost possession, and only minutes remain. I make my way through the crowd to the back room, where on football Sundays Hank feeds his hungry horde of fans and poets. The pool table is covered over with plywood and set out with trays of food: fried fish, dirty rice, Cajun pasta, carrot and slaw salad, green pods of new peas, heavily frosted spice cake.</p>
+<p>On the back patio, where, on drier days, people read poetry, the rain has stopped. But chairs, tables, and benches are puddled. Rain water drips steadily from tree branches drooping heavily over wrought iron and brick.</p>
+<p>I return to the bar and witness a football miracle in progress. Impossibly behind and with no time remaining, the Saints win anyway, and the city sighs in relief. Even before the crowd subsides and the reading can begin, at the Maple Leaf it's been a day of poetry.</p>
+<p><img src="MapleLeafCropped.jpg" alt=""></p>
+<h6>The Maple Leaf Bar on Oak Street</h6>
+
+      </div>
+    </div>
+
+
+    <div class="row-nowrap">
+      <div class="item-sidebar">
+      </div>
+      
+      <div class="item-content">
+          <div class="row-nowrap" style="justify-content: space-around">
+    <h5 class="item-fixed">Steve Beisner's Blog</h5>
+    <h5 class="item-fixed">Comments: beisner@alum.mit.edu</h5>
+    <h5 class="item-fixed">Copyright 2016 by Steve Beisner</h5>
+</div>
+      </div>      
+    </div>
+
+</body>
+</html>

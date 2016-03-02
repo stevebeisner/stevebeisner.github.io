@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- page.tm
+  Left sidebar area with links to posts
+  Right main area for the page content.
+
+  Can be used for any page where we want the default sidebar
+  index in the sidebar.
+-->
+<!-- This is head_incl.tm, for things like meta tags, favicon, CSS links, script tags, etc. -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sounds Of New Orleans From Anywhere</title>
+
+<script type="text/javascript">
+  // Do something interesting and useful here.
+</script>
+
+<!-- favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+<!--
+  ***
+  ***  CSS Stylesheets
+  ***
+-->
+<link rel="stylesheet" href="/resources/css/normalize.css"/>
+<link rel="stylesheet" href="/resources/css/main.css"/>
+
+</head>
+
+<body>
+    <script>
+var page = {"page_id": "2015-07-03-sounds-of-new-orleans-from-anywhere", "summary": "What you hear in New Orleans is like no other city\u2019s sounds. \nThanks to the Internet, you can listen to life in New Orleans \nwherever you happen to be.", "format": "md", "date": ["2015", "07", "03"], "tags": ["places", "new orleans"], "author": "Steve Beisner", "page_type": "post", "template": "page.tm", "title": "Sounds Of New Orleans From Anywhere"};
+</script>
+
+<div class="row-nowrap">
+  <div style="flex: 0 0 3%"></div>
+  <div id="banner" style="flex: 0 1 100%">
+    <!-- image goes here -->
+  </div>
+  <div style="flex: 0 0 3%"></div>
+</div>
+
+<div class="row-nowrap" >
+  <div style="flex: 0 0 3%"></div>
+  <h3 class="item-fixed">
+    Steve Beisner's Blog
+  </h3>
+  <div style="flex: 0 1 100%"></div>
+  <h3 class="item-fixed">
+    Writing, Technology, Places, Life
+
+  </h3>
+  <div style="flex: 0 0 3%"></div>
+</div>
+
+
+<nav>
+  <a href="/home">Home</a>
+  <a href="/about">About</a>
+  <a href="/tagged-by#new orleans">New Orleans Posts</a>
+  <a href="/tagged-by#tech">Tech Posts</a>
+</nav>  
+
+
+<script>
+    var img = 'foggy_forest.jpg';
+    var img_by_tag = {
+      '*no*tag*':       ['foggy_forest.jpg', 'riverFogPano.jpg', 
+                         'fountainpen.jpg'],
+      'life':           ['foggy_forest.jpg', 'riverFogPano.jpg'],
+      'new orleans':    ['Esplanade-pano.jpg', 'MississippiNewOrleans.jpg',
+                         'TreeOfLifeAudubonParkPano2.jpg'],
+      'santa barbara':  ['cropped-SantaBarbaraPano.jpg'],
+      'tech':           ['computerMuseumPano.jpg','Univac9400pano.jpg'],
+      'writing':        ['typewritertype.jpg','fountainpen.jpg']
+    }
+    var pageTag = '*no*tag*';
+    console.log('page.tags=' + JSON.stringify(page.tags));
+    if( page.tags.length) {
+      pageTag = page.tags[ Math.floor(page.tags.length*Math.random()) ];
+      if( ! (pageTag in img_by_tag) ) {
+        pageTag = '*no*tag*';
+      }
+    }
+    console.log('pageTag=' + JSON.stringify(pageTag));
+    var imgs = img_by_tag[ pageTag];
+    console.log('imgs=' + JSON.stringify(imgs))
+    img = imgs[ Math.floor(imgs.length*Math.random()) ];
+    console.log('img=' + JSON.stringify(img));
+    document.getElementById('banner').innerHTML = 
+      '<img src="/resources/images/' + img + '" style="width:100%" />';
+</script>
+
+    <h1 id="page_title" class="center-block">Sounds Of New Orleans From Anywhere</h1>
+
+    <div class="row-nowrap" >
+      <div style="flex: 0 0 3%"></div>
+ 
+      <h3 class="item-fixed">
+        by Steve Beisner
+      </h3>
+ 
+      <div style="flex: 0 1 100%"></div>
+
+      <h3 class="item-fixed">
+        tags: places, new orleans
+      </h3>
+
+      <div style="flex: 0 0 3%"></div>
+    </div>
+
+    <div class="row-nowrap">
+      <div class="item-sidebar">
+                  <h4>Recent Posts</h4>
+              <h5>
+                <a href="/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/11/11
+                </span>
+              </h5>
+              <h5>
+                <a href="/2015-10-30-the-new-old-new-orleans-los-po-boy-citos/">The New Old New Orleans: Los Po-Boy Citos</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/10/30
+                </span>
+              </h5>
+              <h5>
+                <a href="/2015-07-03-sounds-of-new-orleans-from-anywhere/">Sounds Of New Orleans From Anywhere</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/07/03
+                </span>
+              </h5>
+              <h5>
+                <a href="/2015-06-21-my-computer-history-the-ibm-7094/">My Computer History the IBM 7094</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/06/21
+                </span>
+              </h5>
+
+
+          <h4>Pages By Tags</h4>
+            <h5 style="display:inline">
+              <a href="/tagged-by#life">
+                life&nbsp;(4)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+            <h5 style="display:inline">
+              <a href="/tagged-by#new&nbsp;orleans">
+                new&nbsp;orleans&nbsp;(7)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+            <h5 style="display:inline">
+              <a href="/tagged-by#places">
+                places&nbsp;(6)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+            <h5 style="display:inline">
+              <a href="/tagged-by#tech">
+                tech&nbsp;(2)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+            <h5 style="display:inline">
+              <a href="/tagged-by#writing">
+                writing&nbsp;(3)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+
+
+          <h4>Related or Affiliated Sites:</h4>
+          <p>
+            <a href="http://inkbytepress.com">
+              Ink Byte Press
+            </a>
+          </p>
+          <p>
+            <a href="http://melindapalacio.com">
+              Melinda Palacio's Author Web Site
+            </a>
+          </p>
+
+
+          <h4>Steve Beisner:</h4>
+          <p>Steve Beisner can usually be found in New Orleans LA or Santa
+          Barbara CA, writing software, poetry, or fiction.  You can contact
+          him by email with an address constructed as follows: name is 
+          <b>beisner</b>, the part after the at symbol is 
+          <b>alum.mit.edu</b>.</p>
+      </div>
+
+      <div class="item-content">
+          <p>What you hear in New Orleans is like no other city’s sounds. Thanks to the Internet, you can listen to life in New Orleans wherever you happen to be.</p>
+<p>According to the latest Census Bureau estimate, the current population of New Orleans is just under 379,000, yet we have three public stations.</p>
+<p>The city’s love affair with the spoken word, music and musicians, the written word, and visual arts has been rewarded with three very distinctive public radio stations, each covering local life and art in their own way.</p>
+<p>All three can be heard live over the internet.  If you’re thinking of visiting New Orleans or if you <a href="https://www.youtube.com/watch?v=YS5MNK0_X_Q">know what it means to miss New Orleans</a>, follow the links to these stations and hear the city that care forgot.</p>
+<h2>WWOZ</h2>
+<p><a href="http://www.wwoz.org/">http://www.wwoz.org/</a></p>
+<p>Public radio, not NPR.  The best radio station for traditional music, anywhere, period, in my humble opinion.  The work “eclectic” was invented for WWOZ. I can guarantee that there are one or more shows that will cause you a “why haven’t I heard this before?” moment.  (Of course you may also run across a show that is not a flavor you like on your musical ice cream sundae.)</p>
+<p>As a service to both musicians and bar owners (and owners of other venues) they cover exhaustively what bands and performers are playing in which bar or music venue, with details.</p>
+<p>The daily schedule is peppered with live interviews of musicians and singers, and live in-studio performances.</p>
+<p>But mostly WWOZ is music… incredible music.</p>
+<p>The web site will allow you to launch a small WWOZ Player widget that can sit on your desktop and make New Orleans feel close, all day.</p>
+<h2>WWNO</h2>
+<p><a href="http://wwno.org/">http://wwno.org/</a></p>
+<p>New Orleans’ National Public Radio station (NPR).  Yes, they have the national features you want, but they cover the arts, Louisiana cooking, and local culture really well, too.</p>
+<p>Check out Susan Larson’s <a href="http://wwno.org/programs/reading-life">The Reading Life</a>, and Nick Spitzer’s <a href="http://wwno.org/programs/american-routes">American Routes</a>.</p>
+<h2>WRBH</h2>
+<p><a href="http://www.wrbh.org/">http://www.wrbh.org/</a></p>
+<p>The station’s motto is “Reading fine print for the blind, the literary and the visionary.”   They cover literature, news, mysteries, drama, sci-fi, health information, travel, grocery shopping (!), business, magazines — anything of interest.</p>
+<p>It’ll add some powerful spices to whatever else is on your radio menu.</p>
+<h2>(Updated:) WTUL</h2>
+<p><a href="http://wtulneworleans.com/">http://wtulneworleans.com/</a></p>
+<p>Several New Orleans friends have contacted me to say I should include WTUL in this list.  WTUL is associated with Tulane University and is operated by Tulane students, staff, and alumni.  It’s also the “oldest continually operating FM station” in New Orleans.  Like WWOZ it features great play lists of traditional music with a focus on blues, jazz, and traditional New Orleans genres and culture.  Like the others on this list it’s a non-commercial station supported by contributions from individuals and organizations.   Excellent!</p>
+
+      </div>
+    </div>
+
+
+    <div class="row-nowrap">
+      <div class="item-sidebar">
+      </div>
+      
+      <div class="item-content">
+          <div class="row-nowrap" style="justify-content: space-around">
+    <h5 class="item-fixed">Steve Beisner's Blog</h5>
+    <h5 class="item-fixed">Comments: beisner@alum.mit.edu</h5>
+    <h5 class="item-fixed">Copyright 2016 by Steve Beisner</h5>
+</div>
+      </div>      
+    </div>
+
+</body>
+</html>
