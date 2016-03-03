@@ -31,7 +31,7 @@
 
 <body>
     <script>
-var page = {"format": "html", "template": "page.tm", "page_id": "home", "page_type": "text", "author": "Steve Beisner", "tags": [], "title": "Home"};
+var page = {"page_type": "text", "author": "Steve Beisner", "tags": [], "page_id": "home", "template": "page.tm", "format": "html", "title": "Home"};
 </script>
 
 <div class="row-nowrap">
@@ -42,7 +42,7 @@ var page = {"format": "html", "template": "page.tm", "page_id": "home", "page_ty
   <div style="flex: 0 0 3%"></div>
 </div>
 
-<div class="row-nowrap" >
+<div class="row-nowrap" style="padding-top: 10px; padding-bottom: 10px;">
   <div style="flex: 0 0 3%"></div>
   <h3 class="item-fixed">
     Steve Beisner's Blog
@@ -57,10 +57,10 @@ var page = {"format": "html", "template": "page.tm", "page_id": "home", "page_ty
 
 
 <nav>
-  <a href="/home">Home</a>
-  <a href="/about">About</a>
-  <a href="/tagged-by#new orleans">New Orleans Posts</a>
-  <a href="/tagged-by#tech">Tech Posts</a>
+  <a href="/pages/home/">Home</a>
+  <a href="/pages/about/">About</a>
+  <a href="/pages/tagged-by/#new orleans">New Orleans Posts</a>
+  <a href="/pages/tagged-by/#tech">Tech Posts</a>
 </nav>  
 
 
@@ -95,45 +95,38 @@ var page = {"format": "html", "template": "page.tm", "page_id": "home", "page_ty
 
     <h1 id="page_title" class="center-block">Home</h1>
 
-    <div class="row-nowrap" >
-      <div style="flex: 0 0 3%"></div>
- 
-      <h3 class="item-fixed">
+      <h3 class="center-block">
         by Steve Beisner
       </h3>
  
-      <div style="flex: 0 1 100%"></div>
 
 
-      <div style="flex: 0 0 3%"></div>
-    </div>
-
-    <div class="row-nowrap">
+    <div class="row-nowrap">                    <!-- ROW -->
       <div class="item-sidebar">
                   <h4>Recent Posts</h4>
               <h5>
-                <a href="/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
+                <a href="/pages/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
                 <br/>
                 <span style="font-size: 75%">
                 2015/11/11
                 </span>
               </h5>
               <h5>
-                <a href="/2015-10-30-the-new-old-new-orleans-los-po-boy-citos/">The New Old New Orleans: Los Po-Boy Citos</a>
+                <a href="/pages/2015-10-30-the-new-old-new-orleans-los-po-boy-citos/">The New Old New Orleans: Los Po-Boy Citos</a>
                 <br/>
                 <span style="font-size: 75%">
                 2015/10/30
                 </span>
               </h5>
               <h5>
-                <a href="/2015-07-03-sounds-of-new-orleans-from-anywhere/">Sounds Of New Orleans From Anywhere</a>
+                <a href="/pages/2015-07-03-sounds-of-new-orleans-from-anywhere/">Sounds Of New Orleans From Anywhere</a>
                 <br/>
                 <span style="font-size: 75%">
                 2015/07/03
                 </span>
               </h5>
               <h5>
-                <a href="/2015-06-21-my-computer-history-the-ibm-7094/">My Computer History the IBM 7094</a>
+                <a href="/pages/2015-06-21-my-computer-history-the-ibm-7094/">My Computer History the IBM 7094</a>
                 <br/>
                 <span style="font-size: 75%">
                 2015/06/21
@@ -143,51 +136,51 @@ var page = {"format": "html", "template": "page.tm", "page_id": "home", "page_ty
 
           <h4>Pages By Tags</h4>
             <h5 style="display:inline">
-              <a href="/tagged-by#life">
-                life&nbsp;(4)&nbsp;&nbsp;&nbsp;
+              <a href="/pages/tagged-by/#life">
+              life&nbsp;(4)&nbsp;&nbsp;&nbsp;
               </a>
             </h5>
             <h5 style="display:inline">
-              <a href="/tagged-by#new&nbsp;orleans">
-                new&nbsp;orleans&nbsp;(7)&nbsp;&nbsp;&nbsp;
+              <a href="/pages/tagged-by/#new orleans">
+              new&nbsp;orleans&nbsp;(7)&nbsp;&nbsp;&nbsp;
               </a>
             </h5>
             <h5 style="display:inline">
-              <a href="/tagged-by#tech">
-                tech&nbsp;(2)&nbsp;&nbsp;&nbsp;
+              <a href="/pages/tagged-by/#tech">
+              tech&nbsp;(2)&nbsp;&nbsp;&nbsp;
               </a>
             </h5>
             <h5 style="display:inline">
-              <a href="/tagged-by#writing">
-                writing&nbsp;(3)&nbsp;&nbsp;&nbsp;
+              <a href="/pages/tagged-by/#writing">
+              writing&nbsp;(3)&nbsp;&nbsp;&nbsp;
               </a>
             </h5>
 
 
           <h4>Related or Affiliated Sites:</h4>
-          <p>
+          <h5>
             <a href="http://inkbytepress.com">
               Ink Byte Press
             </a>
-          </p>
-          <p>
+          </h5>
+          <h5>
             <a href="http://melindapalacio.com">
               Melinda Palacio's Author Web Site
             </a>
-          </p>
-          <p>
+          </h5>
+          <h5>
             <a href="http://LunaReview.com">
               The Luna Review
             </a>
-          </p>
+          </h5>
 
 
           <h4>Steve Beisner:</h4>
           <p>Steve Beisner can usually be found in New Orleans LA or Santa
           Barbara CA, writing software, poetry, or fiction.  You can contact
-          him by email with an address constructed as follows: name is 
-          <b>beisner</b>, the part after the at symbol is 
-          <b>alum.mit.edu</b>.</p>
+          him by any of the methods described on the
+          <a href="/pages/about">About</a> page.
+          </p>
       </div>
 
       <div class="item-content">
@@ -201,7 +194,7 @@ var page = {"format": "html", "template": "page.tm", "page_id": "home", "page_ty
 </p>
 
       <h5>
-        <a href="/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
+        <a href="/pages/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
       </h5>
       <p>
         (2015/11/11)
@@ -211,10 +204,10 @@ but there's no sign of poetry. For the moment the poets have joined
 the football fans. The Saints are playing the Giants in the Super Dome, 
 it's All Saints Day, and the stars are aligned, as they often are for 
 New Orleans, aiming towards something cosmic.
-        <a href="/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">(READ ...)</a>
+        <a href="/pages/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">(READ MORE ...)</a>
       </p>
       <h5>
-        <a href="/2015-10-30-the-new-old-new-orleans-los-po-boy-citos/">The New Old New Orleans: Los Po-Boy Citos</a>
+        <a href="/pages/2015-10-30-the-new-old-new-orleans-los-po-boy-citos/">The New Old New Orleans: Los Po-Boy Citos</a>
       </h5>
       <p>
         (2015/10/30)
@@ -222,30 +215,30 @@ New Orleans, aiming towards something cosmic.
 If that statement doesn’t fit your comfortable idea of the catastrophe,
 then I direct you to the many articles on the subject, like this one 
 written on the storm’s fifth anniversary from Time Magazine.
-        <a href="/2015-10-30-the-new-old-new-orleans-los-po-boy-citos/">(READ ...)</a>
+        <a href="/pages/2015-10-30-the-new-old-new-orleans-los-po-boy-citos/">(READ MORE ...)</a>
       </p>
       <h5>
-        <a href="/2015-07-03-sounds-of-new-orleans-from-anywhere/">Sounds Of New Orleans From Anywhere</a>
+        <a href="/pages/2015-07-03-sounds-of-new-orleans-from-anywhere/">Sounds Of New Orleans From Anywhere</a>
       </h5>
       <p>
         (2015/07/03)
         What you hear in New Orleans is like no other city’s sounds. 
 Thanks to the Internet, you can listen to life in New Orleans 
 wherever you happen to be.
-        <a href="/2015-07-03-sounds-of-new-orleans-from-anywhere/">(READ ...)</a>
+        <a href="/pages/2015-07-03-sounds-of-new-orleans-from-anywhere/">(READ MORE ...)</a>
       </p>
       <h5>
-        <a href="/2015-06-21-my-computer-history-the-ibm-7094/">My Computer History the IBM 7094</a>
+        <a href="/pages/2015-06-21-my-computer-history-the-ibm-7094/">My Computer History the IBM 7094</a>
       </h5>
       <p>
         (2015/06/21)
         When I was at Westdale Junior High School in Baton Rouge in 1960, 
 I came across <em>The Boys Book of Electronics</em>, which had a chapter 
 on “Giant Electronic Brains”.  I’ve been hooked on computers ever since.
-        <a href="/2015-06-21-my-computer-history-the-ibm-7094/">(READ ...)</a>
+        <a href="/pages/2015-06-21-my-computer-history-the-ibm-7094/">(READ MORE ...)</a>
       </p>
       <h5>
-        <a href="/2015-02-18-mardi-gras-madness-and-sanity/">Mardi Gras Madness and Sanity</a>
+        <a href="/pages/2015-02-18-mardi-gras-madness-and-sanity/">Mardi Gras Madness and Sanity</a>
       </h5>
       <p>
         (2015/02/18)
@@ -253,10 +246,10 @@ on “Giant Electronic Brains”.  I’ve been hooked on computers ever since.
 was three hours of outrageousness. My kind of parade watching: sit 
 on the sidewalk outside your home in a comfortable chair with easy 
 access to good drinks and good food, surrounded by good people.
-        <a href="/2015-02-18-mardi-gras-madness-and-sanity/">(READ ...)</a>
+        <a href="/pages/2015-02-18-mardi-gras-madness-and-sanity/">(READ MORE ...)</a>
       </p>
       <h5>
-        <a href="/2014-09-11-what-would-that-character-do-just-ask/">What Would That Character Do? Just Ask.</a>
+        <a href="/pages/2014-09-11-what-would-that-character-do-just-ask/">What Would That Character Do? Just Ask.</a>
       </h5>
       <p>
         (2014/09/11)
@@ -264,20 +257,20 @@ access to good drinks and good food, surrounded by good people.
 Let’s call her Sara. You can feel it, but you’re not sure what’s 
 wrong. Sara’s dialog doesn’t sound like her. She’s doing things 
 that don’t make sense. Is she who you thought she was?
-        <a href="/2014-09-11-what-would-that-character-do-just-ask/">(READ ...)</a>
+        <a href="/pages/2014-09-11-what-would-that-character-do-just-ask/">(READ MORE ...)</a>
       </p>
       <h5>
-        <a href="/2014-08-11-the-maple-leaf-rag-v/">The Maple Leaf Rag V</a>
+        <a href="/pages/2014-08-11-the-maple-leaf-rag-v/">The Maple Leaf Rag V</a>
       </h5>
       <p>
         (2014/08/11)
         The publication party for the <strong>Maple Leaf Rag V</strong> was held at the Maple 
 Leaf Bar in New Orleans on August 10th. The auspiciousness of the 
 evening being a “Super Moon” surprised no one.
-        <a href="/2014-08-11-the-maple-leaf-rag-v/">(READ ...)</a>
+        <a href="/pages/2014-08-11-the-maple-leaf-rag-v/">(READ MORE ...)</a>
       </p>
       <h5>
-        <a href="/2014-08-07-elixir-making-the-revolution-fun/">Elixir, Making the Revolution Fun</a>
+        <a href="/pages/2014-08-07-elixir-making-the-revolution-fun/">Elixir, Making the Revolution Fun</a>
       </h5>
       <p>
         (2014/08/07)
@@ -288,10 +281,10 @@ Massive Parallelism</strong> (which I will henceforth abbreviate as FIMP,
 is not just another new thing, but is an important collection of new
 technologies and a reasonable and obvious response to the 
 fundamentally-changed/changing computing environment.
-        <a href="/2014-08-07-elixir-making-the-revolution-fun/">(READ ...)</a>
+        <a href="/pages/2014-08-07-elixir-making-the-revolution-fun/">(READ MORE ...)</a>
       </p>
       <h5>
-        <a href="/2014-08-06-an-august-afternoon/">An August Afternoon</a>
+        <a href="/pages/2014-08-06-an-august-afternoon/">An August Afternoon</a>
       </h5>
       <p>
         (2014/08/06)
@@ -299,33 +292,33 @@ fundamentally-changed/changing computing environment.
 might become a novel, or making a weekly commit of Groovy or Javascript 
 poetry to my now one-day-a-week employer’s repository, or pausing for a 
 while in my reading, or weed whacking, or...
-        <a href="/2014-08-06-an-august-afternoon/">(READ ...)</a>
+        <a href="/pages/2014-08-06-an-august-afternoon/">(READ MORE ...)</a>
       </p>
       <h5>
-        <a href="/2014-08-05-new-orleans-pot-holes/">New Orleans Pot Holes</a>
+        <a href="/pages/2014-08-05-new-orleans-pot-holes/">New Orleans Pot Holes</a>
       </h5>
       <p>
         (2014/08/05)
         A friend from Santa Barbara sent me this cartoon, with the question,
 <em>“Is it really this bad?”</em> (Thanks, Karl!)
-        <a href="/2014-08-05-new-orleans-pot-holes/">(READ ...)</a>
+        <a href="/pages/2014-08-05-new-orleans-pot-holes/">(READ MORE ...)</a>
       </p>
       <h5>
-        <a href="/2014-08-03-the-war-of-art/">The War of Art</a>
+        <a href="/pages/2014-08-03-the-war-of-art/">The War of Art</a>
       </h5>
       <p>
         (2014/08/03)
         The book is <em>The War Of Art</em>, by Steven Pressfield, 
 not to be confused with <em>The Art Of War</em>, 
 a completely (!) different book.
-        <a href="/2014-08-03-the-war-of-art/">(READ ...)</a>
+        <a href="/pages/2014-08-03-the-war-of-art/">(READ MORE ...)</a>
       </p>
 
       </div>
     </div>
 
 
-    <div class="row-nowrap">
+    <div class="row-nowrap">                    <!-- ROW -->
       <div class="item-sidebar">
       </div>
       

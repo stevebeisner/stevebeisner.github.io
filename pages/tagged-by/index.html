@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- page.tm
+  Left sidebar area with links to posts
+  Right main area for the page content.
+
+  Can be used for any page where we want the default sidebar
+  index in the sidebar.
+-->
+<!-- This is head_incl.tm, for things like meta tags, favicon, CSS links, script tags, etc. -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pages With Specific Tags</title>
+
+<script type="text/javascript">
+  // Do something interesting and useful here.
+</script>
+
+<!-- favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+<!--
+  ***
+  ***  CSS Stylesheets
+  ***
+-->
+<link rel="stylesheet" href="/resources/css/normalize.css"/>
+<link rel="stylesheet" href="/resources/css/main.css"/>
+
+</head>
+
+<body>
+    <script>
+var page = {"page_type": "text", "author": "", "tags": [], "page_id": "tagged-by", "template": "page.tm", "format": "html", "title": "Pages With Specific Tags"};
+</script>
+
+<div class="row-nowrap">
+  <div style="flex: 0 0 3%"></div>
+  <div id="banner" style="flex: 0 1 100%">
+    <!-- image goes here -->
+  </div>
+  <div style="flex: 0 0 3%"></div>
+</div>
+
+<div class="row-nowrap" style="padding-top: 10px; padding-bottom: 10px;">
+  <div style="flex: 0 0 3%"></div>
+  <h3 class="item-fixed">
+    Steve Beisner's Blog
+  </h3>
+  <div style="flex: 0 1 100%"></div>
+  <h3 class="item-fixed">
+    Writing, Technology, Places, Life
+
+  </h3>
+  <div style="flex: 0 0 3%"></div>
+</div>
+
+
+<nav>
+  <a href="/pages/home/">Home</a>
+  <a href="/pages/about/">About</a>
+  <a href="/pages/tagged-by/#new orleans">New Orleans Posts</a>
+  <a href="/pages/tagged-by/#tech">Tech Posts</a>
+</nav>  
+
+
+<script>
+    var img = 'foggy_forest.jpg';
+    var img_by_tag = {
+      '*no*tag*':       ['foggy_forest.jpg', 'riverFogPano.jpg', 
+                         'fountainpen.jpg'],
+      'life':           ['foggy_forest.jpg', 'riverFogPano.jpg'],
+      'new orleans':    ['Esplanade-pano.jpg', 'MississippiNewOrleans.jpg',
+                         'TreeOfLifeAudubonParkPano2.jpg'],
+      'santa barbara':  ['cropped-SantaBarbaraPano.jpg'],
+      'tech':           ['computerMuseumPano.jpg','Univac9400pano.jpg'],
+      'writing':        ['typewritertype.jpg','fountainpen.jpg']
+    }
+    var pageTag = '*no*tag*';
+    console.log('page.tags=' + JSON.stringify(page.tags));
+    if( page.tags.length) {
+      pageTag = page.tags[ Math.floor(page.tags.length*Math.random()) ];
+      if( ! (pageTag in img_by_tag) ) {
+        pageTag = '*no*tag*';
+      }
+    }
+    console.log('pageTag=' + JSON.stringify(pageTag));
+    var imgs = img_by_tag[ pageTag];
+    console.log('imgs=' + JSON.stringify(imgs))
+    img = imgs[ Math.floor(imgs.length*Math.random()) ];
+    console.log('img=' + JSON.stringify(img));
+    document.getElementById('banner').innerHTML = 
+      '<img src="/resources/images/' + img + '" style="width:100%" />';
+</script>
+
+    <h1 id="page_title" class="center-block">Pages With Specific Tags</h1>
+
+ 
+
+
+    <div class="row-nowrap">                    <!-- ROW -->
+      <div class="item-sidebar">
+                  <h4>Recent Posts</h4>
+              <h5>
+                <a href="/pages/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/11/11
+                </span>
+              </h5>
+              <h5>
+                <a href="/pages/2015-10-30-the-new-old-new-orleans-los-po-boy-citos/">The New Old New Orleans: Los Po-Boy Citos</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/10/30
+                </span>
+              </h5>
+              <h5>
+                <a href="/pages/2015-07-03-sounds-of-new-orleans-from-anywhere/">Sounds Of New Orleans From Anywhere</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/07/03
+                </span>
+              </h5>
+              <h5>
+                <a href="/pages/2015-06-21-my-computer-history-the-ibm-7094/">My Computer History the IBM 7094</a>
+                <br/>
+                <span style="font-size: 75%">
+                2015/06/21
+                </span>
+              </h5>
+
+
+          <h4>Pages By Tags</h4>
+            <h5 style="display:inline">
+              <a href="/pages/tagged-by/#life">
+              life&nbsp;(4)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+            <h5 style="display:inline">
+              <a href="/pages/tagged-by/#new orleans">
+              new&nbsp;orleans&nbsp;(7)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+            <h5 style="display:inline">
+              <a href="/pages/tagged-by/#tech">
+              tech&nbsp;(2)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+            <h5 style="display:inline">
+              <a href="/pages/tagged-by/#writing">
+              writing&nbsp;(3)&nbsp;&nbsp;&nbsp;
+              </a>
+            </h5>
+
+
+          <h4>Related or Affiliated Sites:</h4>
+          <h5>
+            <a href="http://inkbytepress.com">
+              Ink Byte Press
+            </a>
+          </h5>
+          <h5>
+            <a href="http://melindapalacio.com">
+              Melinda Palacio's Author Web Site
+            </a>
+          </h5>
+          <h5>
+            <a href="http://LunaReview.com">
+              The Luna Review
+            </a>
+          </h5>
+
+
+          <h4>Steve Beisner:</h4>
+          <p>Steve Beisner can usually be found in New Orleans LA or Santa
+          Barbara CA, writing software, poetry, or fiction.  You can contact
+          him by any of the methods described on the
+          <a href="/pages/about">About</a> page.
+          </p>
+      </div>
+
+      <div class="item-content">
+          
+<script src="/extensions/tags/tags.js"></script>
+
+<script>
+var pages = [{"page_type": "post", "author": "Steve Beisner", "summary": "The book is <em>The War Of Art</em>, by Steven Pressfield, \nnot to be confused with <em>The Art Of War</em>, \na completely (!) different book.", "page_id": "2014-08-03-the-war-of-art", "date": ["2014", "08", "03"], "template": "page.tm", "format": "md", "title": "The War of Art", "tags": ["life", "writing"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "A friend from Santa Barbara sent me this cartoon, with the question,\n<em>\u201cIs it really this bad?\u201d</em> (Thanks, Karl!)", "page_id": "2014-08-05-new-orleans-pot-holes", "date": ["2014", "08", "05"], "template": "page.tm", "format": "md", "title": "New Orleans Pot Holes", "tags": ["life", "new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "It\u2019s that time. I\u2019m finished with today\u2019s work, flailing away at what \nmight become a novel, or making a weekly commit of Groovy or Javascript \npoetry to my now one-day-a-week employer\u2019s repository, or pausing for a \nwhile in my reading, or weed whacking, or...", "page_id": "2014-08-06-an-august-afternoon", "date": ["2014", "08", "06"], "template": "page.tm", "format": "md", "title": "An August Afternoon", "tags": ["new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "Most of us write software in environments with ridiculous deadlines.\nWe don\u2019t have time to investigate every new thing. My purpose in this\narticle is convince you that <strong>Function Programming + Immutable Data +\nMassive Parallelism</strong> (which I will henceforth abbreviate as FIMP,\nis not just another new thing, but is an important collection of new\ntechnologies and a reasonable and obvious response to the \nfundamentally-changed/changing computing environment.", "page_id": "2014-08-07-elixir-making-the-revolution-fun", "date": ["2014", "08", "07"], "template": "page.tm", "format": "md", "title": "Elixir, Making the Revolution Fun", "tags": ["tech"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "The publication party for the <strong>Maple Leaf Rag V</strong> was held at the Maple \nLeaf Bar in New Orleans on August 10th. The auspiciousness of the \nevening being a \u201cSuper Moon\u201d surprised no one.", "page_id": "2014-08-11-the-maple-leaf-rag-v", "date": ["2014", "08", "11"], "template": "page.tm", "format": "md", "title": "The Maple Leaf Rag V", "tags": ["writing", "new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "You\u2019re writing a novel. One of your characters is not right. \nLet\u2019s call her Sara. You can feel it, but you\u2019re not sure what\u2019s \nwrong. Sara\u2019s dialog doesn\u2019t sound like her. She\u2019s doing things \nthat don\u2019t make sense. Is she who you thought she was?", "page_id": "2014-09-11-what-would-that-character-do-just-ask", "date": ["2014", "09", "11"], "template": "page.tm", "format": "md", "title": "What Would That Character Do? Just Ask.", "tags": ["writing"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "We had a epic \u201cSunday Gras\u201d: the Thoth parade going past our house \nwas three hours of outrageousness. My kind of parade watching: sit \non the sidewalk outside your home in a comfortable chair with easy \naccess to good drinks and good food, surrounded by good people.", "page_id": "2015-02-18-mardi-gras-madness-and-sanity", "date": ["2015", "02", "18"], "template": "page.tm", "format": "md", "title": "Mardi Gras Madness and Sanity", "tags": ["life", "new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "When I was at Westdale Junior High School in Baton Rouge in 1960, \nI came across <em>The Boys Book of Electronics</em>, which had a chapter \non \u201cGiant Electronic Brains\u201d.  I\u2019ve been hooked on computers ever since.", "page_id": "2015-06-21-my-computer-history-the-ibm-7094", "date": ["2015", "06", "21"], "template": "page.tm", "format": "md", "title": "My Computer History the IBM 7094", "tags": ["tech"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "What you hear in New Orleans is like no other city\u2019s sounds. \nThanks to the Internet, you can listen to life in New Orleans \nwherever you happen to be.", "page_id": "2015-07-03-sounds-of-new-orleans-from-anywhere", "date": ["2015", "07", "03"], "template": "page.tm", "format": "md", "title": "Sounds Of New Orleans From Anywhere", "tags": ["new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "<em>Katrina was a man-made, not a natural disaster.</em> \nIf that statement doesn\u2019t fit your comfortable idea of the catastrophe,\nthen I direct you to the many articles on the subject, like this one \nwritten on the storm\u2019s fifth anniversary from Time Magazine.", "page_id": "2015-10-30-the-new-old-new-orleans-los-po-boy-citos", "date": ["2015", "10", "30"], "template": "page.tm", "format": "md", "title": "The New Old New Orleans: Los Po-Boy Citos", "tags": ["new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "The afternoon before I leave New Orleans, I arrive at the Maple Leaf \nminutes after three, the start time of Nancy Harris's Sunday readings, \nbut there's no sign of poetry. For the moment the poets have joined \nthe football fans. The Saints are playing the Giants in the Super Dome, \nit's All Saints Day, and the stars are aligned, as they often are for \nNew Orleans, aiming towards something cosmic.", "page_id": "2015-11-11-all-saints-day-at-the-maple-leaf-bar", "date": ["2015", "11", "11"], "template": "page.tm", "format": "md", "title": "All Saints Day at the Maple Leaf Bar", "tags": ["life", "new orleans"]}, {"page_type": "text", "author": "", "tags": [], "page_id": "about", "template": "page_no_sidebar.tm", "format": "md", "title": "About"}, {"page_type": "text", "author": "Steve Beisner", "tags": [], "page_id": "home", "template": "page.tm", "format": "html", "title": "Home"}, {"page_type": "text", "author": "", "tags": [], "page_id": "tagged-by", "template": "page.tm", "format": "html", "title": "Pages With Specific Tags"}];
+</script>
+
+<div id="links">
+  <!-- links to pages will go here. -->
+</div>
+
+
+<script>
+  function location_hash_changed() {
+    var hash = window.location.hash;
+    if( ! hash){
+      alert("No tags specified");
+    } else {
+      var tagsList = hash.substr(1).trim().split(/ *, */);
+    }
+    //console.log("tagsList: %s", JSON.stringify(tagsList))
+
+    // Customize page title:
+    var elm = document.getElementById("page_title");
+    var quotedTagsList = tagsList.map(function(t) { return '"' + t + '"';});   
+    if( tagsList.length === 1) {
+      elm.innerHTML = 'Pages With Tag, ' + quotedTagsList[0] + '.';
+    } else {
+      elm.innerHTML = 'Pages With Tags, ' + quotedTagsList.join(', ') + '.';
+    }
+
+    var tagged_pages = tags.taggedAny(pages, tagsList);
+    //console.log("tagged_pages: %s", JSON.stringify(tagged_pages))
+
+    var links = document.getElementById('links');
+    links.innerHTML = '';
+    for( var p of tagged_pages) {
+      //dbug('date', p);
+      links.innerHTML += (
+        '<h5>\n'+
+        '   <a href="/pages/' + p.page_id + '/">\n'+
+        '         ' + p.title + '\n'+
+        '   </a>\n'+
+        '</h5>\n'+
+        '<p>\n'+
+        '  (' + p.date[0] + '/' + p.date[1] + '/' + p.date[2] + ')\n'+
+        '   ' + p.summary + '\n'+
+        '  <a href="/pages/' + p.page_id + '/">(READ MORE...)</a>\n'+
+        '</p>\n');
+    }
+  }
+  window.onhashchange = location_hash_changed;
+  location_hash_changed();
+</script>
+
+      </div>
+    </div>
+
+
+    <div class="row-nowrap">                    <!-- ROW -->
+      <div class="item-sidebar">
+      </div>
+      
+      <div class="item-content">
+          <div class="row-nowrap" style="justify-content: space-around">
+    <h5 class="item-fixed">Steve Beisner's Blog</h5>
+    <h5 class="item-fixed">Comments: beisner@alum.mit.edu</h5>
+    <h5 class="item-fixed">Copyright 2016 by Steve Beisner</h5>
+</div>
+      </div>      
+    </div>
+
+</body>
+</html>
