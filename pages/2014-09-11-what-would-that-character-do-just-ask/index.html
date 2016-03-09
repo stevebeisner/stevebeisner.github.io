@@ -31,7 +31,7 @@
 
 <body>
     <script>
-var page = {"page_type": "post", "author": "Steve Beisner", "summary": "You\u2019re writing a novel. One of your characters is not right. \nLet\u2019s call her Sara. You can feel it, but you\u2019re not sure what\u2019s \nwrong. Sara\u2019s dialog doesn\u2019t sound like her. She\u2019s doing things \nthat don\u2019t make sense. Is she who you thought she was?", "page_id": "2014-09-11-what-would-that-character-do-just-ask", "date": ["2014", "09", "11"], "template": "page.tm", "format": "md", "title": "What Would That Character Do? Just Ask.", "tags": ["writing"]};
+var page = {"page_type": "post", "title": "What Would That Character Do? Just Ask.", "template": "page.tm", "summary": "You\u2019re writing a novel. One of your characters is not right. \nLet\u2019s call her Sara. You can feel it, but you\u2019re not sure what\u2019s \nwrong. Sara\u2019s dialog doesn\u2019t sound like her. She\u2019s doing things \nthat don\u2019t make sense. Is she who you thought she was?", "format": "md", "tags": ["writing"], "date": ["2014", "09", "11"], "page_id": "2014-09-11-what-would-that-character-do-just-ask", "author": "Steve Beisner"};
 </script>
 
 <div class="row-nowrap">
@@ -65,7 +65,6 @@ var page = {"page_type": "post", "author": "Steve Beisner", "summary": "You\u201
 
 
 <script>
-    var img = 'foggy_forest.jpg';
     var img_by_tag = {
       '*no*tag*':       ['foggy_forest.jpg', 'riverFogPano.jpg', 
                          'fountainpen.jpg'],
@@ -87,7 +86,7 @@ var page = {"page_type": "post", "author": "Steve Beisner", "summary": "You\u201
     console.log('pageTag=' + JSON.stringify(pageTag));
     var imgs = img_by_tag[ pageTag];
     console.log('imgs=' + JSON.stringify(imgs))
-    img = imgs[ Math.floor(imgs.length*Math.random()) ];
+    var img = imgs[ Math.floor(imgs.length*Math.random()) ];
     console.log('img=' + JSON.stringify(img));
     document.getElementById('banner').innerHTML = 
       '<img src="/resources/images/' + img + '" style="width:100%" />';
@@ -107,6 +106,13 @@ var page = {"page_type": "post", "author": "Steve Beisner", "summary": "You\u201
     <div class="row-nowrap">                    <!-- ROW -->
       <div class="item-sidebar">
                   <h4>Recent Posts</h4>
+              <h5>
+                <a href="/pages/2016-03-09-announcing-pytem-simple-python-templates/">Announcing PyTem: Simple Python Templates</a>
+                <br/>
+                <span style="font-size: 75%">
+                2016/03/09
+                </span>
+              </h5>
               <h5>
                 <a href="/pages/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
                 <br/>
@@ -128,13 +134,6 @@ var page = {"page_type": "post", "author": "Steve Beisner", "summary": "You\u201
                 2015/07/03
                 </span>
               </h5>
-              <h5>
-                <a href="/pages/2015-06-21-my-computer-history-the-ibm-7094/">My Computer History the IBM 7094</a>
-                <br/>
-                <span style="font-size: 75%">
-                2015/06/21
-                </span>
-              </h5>
 
 
           <h4>Pages By Tags</h4>
@@ -150,7 +149,7 @@ var page = {"page_type": "post", "author": "Steve Beisner", "summary": "You\u201
             </h5>
             <h5 style="display:inline">
               <a href="/pages/tagged-by/#tech">
-              tech&nbsp;(2)&nbsp;&nbsp;&nbsp;
+              tech&nbsp;(3)&nbsp;&nbsp;&nbsp;
               </a>
             </h5>
             <h5 style="display:inline">

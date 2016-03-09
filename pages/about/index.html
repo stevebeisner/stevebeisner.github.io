@@ -27,7 +27,7 @@
 
 <body>
     <script>
-var page = {"page_type": "text", "author": "", "tags": [], "page_id": "about", "template": "page_no_sidebar.tm", "format": "md", "title": "About"};
+var page = {"page_type": "text", "title": "About", "template": "page_no_sidebar.tm", "format": "md", "tags": [], "page_id": "about", "author": ""};
 </script>
 
 <div class="row-nowrap">
@@ -61,7 +61,6 @@ var page = {"page_type": "text", "author": "", "tags": [], "page_id": "about", "
 
 
 <script>
-    var img = 'foggy_forest.jpg';
     var img_by_tag = {
       '*no*tag*':       ['foggy_forest.jpg', 'riverFogPano.jpg', 
                          'fountainpen.jpg'],
@@ -83,7 +82,7 @@ var page = {"page_type": "text", "author": "", "tags": [], "page_id": "about", "
     console.log('pageTag=' + JSON.stringify(pageTag));
     var imgs = img_by_tag[ pageTag];
     console.log('imgs=' + JSON.stringify(imgs))
-    img = imgs[ Math.floor(imgs.length*Math.random()) ];
+    var img = imgs[ Math.floor(imgs.length*Math.random()) ];
     console.log('img=' + JSON.stringify(img));
     document.getElementById('banner').innerHTML = 
       '<img src="/resources/images/' + img + '" style="width:100%" />';

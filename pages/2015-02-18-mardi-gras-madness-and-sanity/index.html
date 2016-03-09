@@ -31,7 +31,7 @@
 
 <body>
     <script>
-var page = {"page_type": "post", "author": "Steve Beisner", "summary": "We had a epic \u201cSunday Gras\u201d: the Thoth parade going past our house \nwas three hours of outrageousness. My kind of parade watching: sit \non the sidewalk outside your home in a comfortable chair with easy \naccess to good drinks and good food, surrounded by good people.", "page_id": "2015-02-18-mardi-gras-madness-and-sanity", "date": ["2015", "02", "18"], "template": "page.tm", "format": "md", "title": "Mardi Gras Madness and Sanity", "tags": ["life", "new orleans"]};
+var page = {"page_type": "post", "title": "Mardi Gras Madness and Sanity", "template": "page.tm", "summary": "We had a epic \u201cSunday Gras\u201d: the Thoth parade going past our house \nwas three hours of outrageousness. My kind of parade watching: sit \non the sidewalk outside your home in a comfortable chair with easy \naccess to good drinks and good food, surrounded by good people.", "format": "md", "tags": ["life", "new orleans"], "date": ["2015", "02", "18"], "page_id": "2015-02-18-mardi-gras-madness-and-sanity", "author": "Steve Beisner"};
 </script>
 
 <div class="row-nowrap">
@@ -65,7 +65,6 @@ var page = {"page_type": "post", "author": "Steve Beisner", "summary": "We had a
 
 
 <script>
-    var img = 'foggy_forest.jpg';
     var img_by_tag = {
       '*no*tag*':       ['foggy_forest.jpg', 'riverFogPano.jpg', 
                          'fountainpen.jpg'],
@@ -87,7 +86,7 @@ var page = {"page_type": "post", "author": "Steve Beisner", "summary": "We had a
     console.log('pageTag=' + JSON.stringify(pageTag));
     var imgs = img_by_tag[ pageTag];
     console.log('imgs=' + JSON.stringify(imgs))
-    img = imgs[ Math.floor(imgs.length*Math.random()) ];
+    var img = imgs[ Math.floor(imgs.length*Math.random()) ];
     console.log('img=' + JSON.stringify(img));
     document.getElementById('banner').innerHTML = 
       '<img src="/resources/images/' + img + '" style="width:100%" />';
@@ -107,6 +106,13 @@ var page = {"page_type": "post", "author": "Steve Beisner", "summary": "We had a
     <div class="row-nowrap">                    <!-- ROW -->
       <div class="item-sidebar">
                   <h4>Recent Posts</h4>
+              <h5>
+                <a href="/pages/2016-03-09-announcing-pytem-simple-python-templates/">Announcing PyTem: Simple Python Templates</a>
+                <br/>
+                <span style="font-size: 75%">
+                2016/03/09
+                </span>
+              </h5>
               <h5>
                 <a href="/pages/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
                 <br/>
@@ -128,13 +134,6 @@ var page = {"page_type": "post", "author": "Steve Beisner", "summary": "We had a
                 2015/07/03
                 </span>
               </h5>
-              <h5>
-                <a href="/pages/2015-06-21-my-computer-history-the-ibm-7094/">My Computer History the IBM 7094</a>
-                <br/>
-                <span style="font-size: 75%">
-                2015/06/21
-                </span>
-              </h5>
 
 
           <h4>Pages By Tags</h4>
@@ -150,7 +149,7 @@ var page = {"page_type": "post", "author": "Steve Beisner", "summary": "We had a
             </h5>
             <h5 style="display:inline">
               <a href="/pages/tagged-by/#tech">
-              tech&nbsp;(2)&nbsp;&nbsp;&nbsp;
+              tech&nbsp;(3)&nbsp;&nbsp;&nbsp;
               </a>
             </h5>
             <h5 style="display:inline">

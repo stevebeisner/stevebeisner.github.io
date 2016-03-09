@@ -31,7 +31,7 @@
 
 <body>
     <script>
-var page = {"page_type": "text", "author": "Steve Beisner", "tags": [], "page_id": "home", "template": "page.tm", "format": "html", "title": "Home"};
+var page = {"page_type": "text", "title": "Home", "template": "page.tm", "format": "html", "tags": [], "page_id": "home", "author": "Steve Beisner"};
 </script>
 
 <div class="row-nowrap">
@@ -65,7 +65,6 @@ var page = {"page_type": "text", "author": "Steve Beisner", "tags": [], "page_id
 
 
 <script>
-    var img = 'foggy_forest.jpg';
     var img_by_tag = {
       '*no*tag*':       ['foggy_forest.jpg', 'riverFogPano.jpg', 
                          'fountainpen.jpg'],
@@ -87,7 +86,7 @@ var page = {"page_type": "text", "author": "Steve Beisner", "tags": [], "page_id
     console.log('pageTag=' + JSON.stringify(pageTag));
     var imgs = img_by_tag[ pageTag];
     console.log('imgs=' + JSON.stringify(imgs))
-    img = imgs[ Math.floor(imgs.length*Math.random()) ];
+    var img = imgs[ Math.floor(imgs.length*Math.random()) ];
     console.log('img=' + JSON.stringify(img));
     document.getElementById('banner').innerHTML = 
       '<img src="/resources/images/' + img + '" style="width:100%" />';
@@ -104,6 +103,13 @@ var page = {"page_type": "text", "author": "Steve Beisner", "tags": [], "page_id
     <div class="row-nowrap">                    <!-- ROW -->
       <div class="item-sidebar">
                   <h4>Recent Posts</h4>
+              <h5>
+                <a href="/pages/2016-03-09-announcing-pytem-simple-python-templates/">Announcing PyTem: Simple Python Templates</a>
+                <br/>
+                <span style="font-size: 75%">
+                2016/03/09
+                </span>
+              </h5>
               <h5>
                 <a href="/pages/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
                 <br/>
@@ -125,13 +131,6 @@ var page = {"page_type": "text", "author": "Steve Beisner", "tags": [], "page_id
                 2015/07/03
                 </span>
               </h5>
-              <h5>
-                <a href="/pages/2015-06-21-my-computer-history-the-ibm-7094/">My Computer History the IBM 7094</a>
-                <br/>
-                <span style="font-size: 75%">
-                2015/06/21
-                </span>
-              </h5>
 
 
           <h4>Pages By Tags</h4>
@@ -147,7 +146,7 @@ var page = {"page_type": "text", "author": "Steve Beisner", "tags": [], "page_id
             </h5>
             <h5 style="display:inline">
               <a href="/pages/tagged-by/#tech">
-              tech&nbsp;(2)&nbsp;&nbsp;&nbsp;
+              tech&nbsp;(3)&nbsp;&nbsp;&nbsp;
               </a>
             </h5>
             <h5 style="display:inline">
@@ -193,6 +192,15 @@ var page = {"page_type": "text", "author": "Steve Beisner", "tags": [], "page_id
   sidebar, under **Pages By Tags**.
 </p>
 
+      <h5>
+        <a href="/pages/2016-03-09-announcing-pytem-simple-python-templates/">Announcing PyTem: Simple Python Templates</a>
+      </h5>
+      <p>
+        (2016/03/09)
+        PyTem is an implementation of a "Python-Server-Pages"-like template
+engine for Python 3+.
+        <a href="/pages/2016-03-09-announcing-pytem-simple-python-templates/">(READ MORE ...)</a>
+      </p>
       <h5>
         <a href="/pages/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
       </h5>

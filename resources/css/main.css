@@ -4,51 +4,54 @@ html {
   *, *:before, *:after {
     box-sizing: inherit; }
 
-    .red {
-      color: #FF0000; }
+    code {
+      white-space: pre-wrap; }
 
-      .center-block {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center; }
+      .red {
+        color: #FF0000; }
 
-        .row-nowrap {
-          display: flex;
-          flex-flow: row nowrap;
-          width: 100%; }
+        .center-block {
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center; }
 
-          .row-wrap {
+          .row-nowrap {
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             width: 100%; }
 
-            .item-fixed {
-              flex: 0 0 auto;
-              margin: 0px;
-              padding: 0px; }
+            .row-wrap {
+              display: flex;
+              flex-flow: row wrap;
+              width: 100%; }
 
-              .item-sidebar {
-                flex: 0 0 30%;
-                padding: 1em;
-                color: darkblue;
-                background: inherit; }
+              .item-fixed {
+                flex: 0 0 auto;
+                margin: 0px;
+                padding: 0px; }
 
-                .item-content {
-                  flex: 0 0 70%;
-                  padding: 2em;
-                  color: black;
+                .item-sidebar {
+                  flex: 0 0 30%;
+                  padding: 1em;
+                  color: darkblue;
                   background: inherit; }
 
-                  a, a:link, a:visited {
-                    text-decoration: none;
-                    color: #990000; }
+                  .item-content {
+                    flex: 0 0 70%;
+                    padding: 2em;
+                    color: black;
+                    background: inherit; }
 
-                    a:hover, a:active {
+                    a, a:link, a:visited {
                       text-decoration: none;
-                      color: #FF0000; }
+                      color: #990000; }
 
-                      .item-content img {
-                        width: 100%; }
+                      a:hover, a:active {
+                        text-decoration: none;
+                        color: #FF0000; }
+
+                        .item-content img {
+                          width: 100%; }
 nav {
   display: flex;
   width: 94%;

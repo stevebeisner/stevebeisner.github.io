@@ -31,7 +31,7 @@
 
 <body>
     <script>
-var page = {"page_type": "text", "author": "", "tags": [], "page_id": "tagged-by", "template": "page.tm", "format": "html", "title": "Pages With Specific Tags"};
+var page = {"page_type": "text", "title": "Pages With Specific Tags", "template": "page.tm", "format": "html", "tags": [], "page_id": "tagged-by", "author": ""};
 </script>
 
 <div class="row-nowrap">
@@ -65,7 +65,6 @@ var page = {"page_type": "text", "author": "", "tags": [], "page_id": "tagged-by
 
 
 <script>
-    var img = 'foggy_forest.jpg';
     var img_by_tag = {
       '*no*tag*':       ['foggy_forest.jpg', 'riverFogPano.jpg', 
                          'fountainpen.jpg'],
@@ -87,7 +86,7 @@ var page = {"page_type": "text", "author": "", "tags": [], "page_id": "tagged-by
     console.log('pageTag=' + JSON.stringify(pageTag));
     var imgs = img_by_tag[ pageTag];
     console.log('imgs=' + JSON.stringify(imgs))
-    img = imgs[ Math.floor(imgs.length*Math.random()) ];
+    var img = imgs[ Math.floor(imgs.length*Math.random()) ];
     console.log('img=' + JSON.stringify(img));
     document.getElementById('banner').innerHTML = 
       '<img src="/resources/images/' + img + '" style="width:100%" />';
@@ -101,6 +100,13 @@ var page = {"page_type": "text", "author": "", "tags": [], "page_id": "tagged-by
     <div class="row-nowrap">                    <!-- ROW -->
       <div class="item-sidebar">
                   <h4>Recent Posts</h4>
+              <h5>
+                <a href="/pages/2016-03-09-announcing-pytem-simple-python-templates/">Announcing PyTem: Simple Python Templates</a>
+                <br/>
+                <span style="font-size: 75%">
+                2016/03/09
+                </span>
+              </h5>
               <h5>
                 <a href="/pages/2015-11-11-all-saints-day-at-the-maple-leaf-bar/">All Saints Day at the Maple Leaf Bar</a>
                 <br/>
@@ -122,13 +128,6 @@ var page = {"page_type": "text", "author": "", "tags": [], "page_id": "tagged-by
                 2015/07/03
                 </span>
               </h5>
-              <h5>
-                <a href="/pages/2015-06-21-my-computer-history-the-ibm-7094/">My Computer History the IBM 7094</a>
-                <br/>
-                <span style="font-size: 75%">
-                2015/06/21
-                </span>
-              </h5>
 
 
           <h4>Pages By Tags</h4>
@@ -144,7 +143,7 @@ var page = {"page_type": "text", "author": "", "tags": [], "page_id": "tagged-by
             </h5>
             <h5 style="display:inline">
               <a href="/pages/tagged-by/#tech">
-              tech&nbsp;(2)&nbsp;&nbsp;&nbsp;
+              tech&nbsp;(3)&nbsp;&nbsp;&nbsp;
               </a>
             </h5>
             <h5 style="display:inline">
@@ -185,7 +184,7 @@ var page = {"page_type": "text", "author": "", "tags": [], "page_id": "tagged-by
 <script src="/extensions/tags/tags.js"></script>
 
 <script>
-var pages = [{"page_type": "post", "author": "Steve Beisner", "summary": "The book is <em>The War Of Art</em>, by Steven Pressfield, \nnot to be confused with <em>The Art Of War</em>, \na completely (!) different book.", "page_id": "2014-08-03-the-war-of-art", "date": ["2014", "08", "03"], "template": "page.tm", "format": "md", "title": "The War of Art", "tags": ["life", "writing"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "A friend from Santa Barbara sent me this cartoon, with the question,\n<em>\u201cIs it really this bad?\u201d</em> (Thanks, Karl!)", "page_id": "2014-08-05-new-orleans-pot-holes", "date": ["2014", "08", "05"], "template": "page.tm", "format": "md", "title": "New Orleans Pot Holes", "tags": ["life", "new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "It\u2019s that time. I\u2019m finished with today\u2019s work, flailing away at what \nmight become a novel, or making a weekly commit of Groovy or Javascript \npoetry to my now one-day-a-week employer\u2019s repository, or pausing for a \nwhile in my reading, or weed whacking, or...", "page_id": "2014-08-06-an-august-afternoon", "date": ["2014", "08", "06"], "template": "page.tm", "format": "md", "title": "An August Afternoon", "tags": ["new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "Most of us write software in environments with ridiculous deadlines.\nWe don\u2019t have time to investigate every new thing. My purpose in this\narticle is convince you that <strong>Function Programming + Immutable Data +\nMassive Parallelism</strong> (which I will henceforth abbreviate as FIMP,\nis not just another new thing, but is an important collection of new\ntechnologies and a reasonable and obvious response to the \nfundamentally-changed/changing computing environment.", "page_id": "2014-08-07-elixir-making-the-revolution-fun", "date": ["2014", "08", "07"], "template": "page.tm", "format": "md", "title": "Elixir, Making the Revolution Fun", "tags": ["tech"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "The publication party for the <strong>Maple Leaf Rag V</strong> was held at the Maple \nLeaf Bar in New Orleans on August 10th. The auspiciousness of the \nevening being a \u201cSuper Moon\u201d surprised no one.", "page_id": "2014-08-11-the-maple-leaf-rag-v", "date": ["2014", "08", "11"], "template": "page.tm", "format": "md", "title": "The Maple Leaf Rag V", "tags": ["writing", "new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "You\u2019re writing a novel. One of your characters is not right. \nLet\u2019s call her Sara. You can feel it, but you\u2019re not sure what\u2019s \nwrong. Sara\u2019s dialog doesn\u2019t sound like her. She\u2019s doing things \nthat don\u2019t make sense. Is she who you thought she was?", "page_id": "2014-09-11-what-would-that-character-do-just-ask", "date": ["2014", "09", "11"], "template": "page.tm", "format": "md", "title": "What Would That Character Do? Just Ask.", "tags": ["writing"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "We had a epic \u201cSunday Gras\u201d: the Thoth parade going past our house \nwas three hours of outrageousness. My kind of parade watching: sit \non the sidewalk outside your home in a comfortable chair with easy \naccess to good drinks and good food, surrounded by good people.", "page_id": "2015-02-18-mardi-gras-madness-and-sanity", "date": ["2015", "02", "18"], "template": "page.tm", "format": "md", "title": "Mardi Gras Madness and Sanity", "tags": ["life", "new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "When I was at Westdale Junior High School in Baton Rouge in 1960, \nI came across <em>The Boys Book of Electronics</em>, which had a chapter \non \u201cGiant Electronic Brains\u201d.  I\u2019ve been hooked on computers ever since.", "page_id": "2015-06-21-my-computer-history-the-ibm-7094", "date": ["2015", "06", "21"], "template": "page.tm", "format": "md", "title": "My Computer History the IBM 7094", "tags": ["tech"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "What you hear in New Orleans is like no other city\u2019s sounds. \nThanks to the Internet, you can listen to life in New Orleans \nwherever you happen to be.", "page_id": "2015-07-03-sounds-of-new-orleans-from-anywhere", "date": ["2015", "07", "03"], "template": "page.tm", "format": "md", "title": "Sounds Of New Orleans From Anywhere", "tags": ["new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "<em>Katrina was a man-made, not a natural disaster.</em> \nIf that statement doesn\u2019t fit your comfortable idea of the catastrophe,\nthen I direct you to the many articles on the subject, like this one \nwritten on the storm\u2019s fifth anniversary from Time Magazine.", "page_id": "2015-10-30-the-new-old-new-orleans-los-po-boy-citos", "date": ["2015", "10", "30"], "template": "page.tm", "format": "md", "title": "The New Old New Orleans: Los Po-Boy Citos", "tags": ["new orleans"]}, {"page_type": "post", "author": "Steve Beisner", "summary": "The afternoon before I leave New Orleans, I arrive at the Maple Leaf \nminutes after three, the start time of Nancy Harris's Sunday readings, \nbut there's no sign of poetry. For the moment the poets have joined \nthe football fans. The Saints are playing the Giants in the Super Dome, \nit's All Saints Day, and the stars are aligned, as they often are for \nNew Orleans, aiming towards something cosmic.", "page_id": "2015-11-11-all-saints-day-at-the-maple-leaf-bar", "date": ["2015", "11", "11"], "template": "page.tm", "format": "md", "title": "All Saints Day at the Maple Leaf Bar", "tags": ["life", "new orleans"]}, {"page_type": "text", "author": "", "tags": [], "page_id": "about", "template": "page_no_sidebar.tm", "format": "md", "title": "About"}, {"page_type": "text", "author": "Steve Beisner", "tags": [], "page_id": "home", "template": "page.tm", "format": "html", "title": "Home"}, {"page_type": "text", "author": "", "tags": [], "page_id": "tagged-by", "template": "page.tm", "format": "html", "title": "Pages With Specific Tags"}];
+var pages = [{"page_type": "post", "title": "The War of Art", "template": "page.tm", "tags": ["life", "writing"], "format": "md", "summary": "The book is <em>The War Of Art</em>, by Steven Pressfield, \nnot to be confused with <em>The Art Of War</em>, \na completely (!) different book.", "date": ["2014", "08", "03"], "page_id": "2014-08-03-the-war-of-art", "author": "Steve Beisner"}, {"page_type": "post", "title": "New Orleans Pot Holes", "template": "page.tm", "tags": ["life", "new orleans"], "format": "md", "summary": "A friend from Santa Barbara sent me this cartoon, with the question,\n<em>\u201cIs it really this bad?\u201d</em> (Thanks, Karl!)", "date": ["2014", "08", "05"], "page_id": "2014-08-05-new-orleans-pot-holes", "author": "Steve Beisner"}, {"page_type": "post", "title": "An August Afternoon", "template": "page.tm", "tags": ["new orleans"], "format": "md", "summary": "It\u2019s that time. I\u2019m finished with today\u2019s work, flailing away at what \nmight become a novel, or making a weekly commit of Groovy or Javascript \npoetry to my now one-day-a-week employer\u2019s repository, or pausing for a \nwhile in my reading, or weed whacking, or...", "date": ["2014", "08", "06"], "page_id": "2014-08-06-an-august-afternoon", "author": "Steve Beisner"}, {"page_type": "post", "title": "Elixir, Making the Revolution Fun", "template": "page.tm", "tags": ["tech"], "format": "md", "summary": "Most of us write software in environments with ridiculous deadlines.\nWe don\u2019t have time to investigate every new thing. My purpose in this\narticle is convince you that <strong>Function Programming + Immutable Data +\nMassive Parallelism</strong> (which I will henceforth abbreviate as FIMP,\nis not just another new thing, but is an important collection of new\ntechnologies and a reasonable and obvious response to the \nfundamentally-changed/changing computing environment.", "date": ["2014", "08", "07"], "page_id": "2014-08-07-elixir-making-the-revolution-fun", "author": "Steve Beisner"}, {"page_type": "post", "title": "The Maple Leaf Rag V", "template": "page.tm", "tags": ["writing", "new orleans"], "format": "md", "summary": "The publication party for the <strong>Maple Leaf Rag V</strong> was held at the Maple \nLeaf Bar in New Orleans on August 10th. The auspiciousness of the \nevening being a \u201cSuper Moon\u201d surprised no one.", "date": ["2014", "08", "11"], "page_id": "2014-08-11-the-maple-leaf-rag-v", "author": "Steve Beisner"}, {"page_type": "post", "title": "What Would That Character Do? Just Ask.", "template": "page.tm", "tags": ["writing"], "format": "md", "summary": "You\u2019re writing a novel. One of your characters is not right. \nLet\u2019s call her Sara. You can feel it, but you\u2019re not sure what\u2019s \nwrong. Sara\u2019s dialog doesn\u2019t sound like her. She\u2019s doing things \nthat don\u2019t make sense. Is she who you thought she was?", "date": ["2014", "09", "11"], "page_id": "2014-09-11-what-would-that-character-do-just-ask", "author": "Steve Beisner"}, {"page_type": "post", "title": "Mardi Gras Madness and Sanity", "template": "page.tm", "tags": ["life", "new orleans"], "format": "md", "summary": "We had a epic \u201cSunday Gras\u201d: the Thoth parade going past our house \nwas three hours of outrageousness. My kind of parade watching: sit \non the sidewalk outside your home in a comfortable chair with easy \naccess to good drinks and good food, surrounded by good people.", "date": ["2015", "02", "18"], "page_id": "2015-02-18-mardi-gras-madness-and-sanity", "author": "Steve Beisner"}, {"page_type": "post", "title": "My Computer History the IBM 7094", "template": "page.tm", "tags": ["tech"], "format": "md", "summary": "When I was at Westdale Junior High School in Baton Rouge in 1960, \nI came across <em>The Boys Book of Electronics</em>, which had a chapter \non \u201cGiant Electronic Brains\u201d.  I\u2019ve been hooked on computers ever since.", "date": ["2015", "06", "21"], "page_id": "2015-06-21-my-computer-history-the-ibm-7094", "author": "Steve Beisner"}, {"page_type": "post", "title": "Sounds Of New Orleans From Anywhere", "template": "page.tm", "tags": ["new orleans"], "format": "md", "summary": "What you hear in New Orleans is like no other city\u2019s sounds. \nThanks to the Internet, you can listen to life in New Orleans \nwherever you happen to be.", "date": ["2015", "07", "03"], "page_id": "2015-07-03-sounds-of-new-orleans-from-anywhere", "author": "Steve Beisner"}, {"page_type": "post", "title": "The New Old New Orleans: Los Po-Boy Citos", "template": "page.tm", "tags": ["new orleans"], "format": "md", "summary": "<em>Katrina was a man-made, not a natural disaster.</em> \nIf that statement doesn\u2019t fit your comfortable idea of the catastrophe,\nthen I direct you to the many articles on the subject, like this one \nwritten on the storm\u2019s fifth anniversary from Time Magazine.", "date": ["2015", "10", "30"], "page_id": "2015-10-30-the-new-old-new-orleans-los-po-boy-citos", "author": "Steve Beisner"}, {"page_type": "post", "title": "All Saints Day at the Maple Leaf Bar", "template": "page.tm", "tags": ["life", "new orleans"], "format": "md", "summary": "The afternoon before I leave New Orleans, I arrive at the Maple Leaf \nminutes after three, the start time of Nancy Harris's Sunday readings, \nbut there's no sign of poetry. For the moment the poets have joined \nthe football fans. The Saints are playing the Giants in the Super Dome, \nit's All Saints Day, and the stars are aligned, as they often are for \nNew Orleans, aiming towards something cosmic.", "date": ["2015", "11", "11"], "page_id": "2015-11-11-all-saints-day-at-the-maple-leaf-bar", "author": "Steve Beisner"}, {"page_type": "post", "title": "Announcing PyTem: Simple Python Templates", "template": "page.tm", "tags": ["tech"], "format": "md", "summary": "PyTem is an implementation of a \"Python-Server-Pages\"-like template\nengine for Python 3+.", "date": ["2016", "03", "09"], "page_id": "2016-03-09-announcing-pytem-simple-python-templates", "author": "Steve Beisner"}, {"page_type": "text", "title": "About", "template": "page_no_sidebar.tm", "tags": [], "format": "md", "page_id": "about", "author": ""}, {"page_type": "text", "title": "Home", "template": "page.tm", "tags": [], "format": "html", "page_id": "home", "author": "Steve Beisner"}, {"page_type": "text", "title": "Pages With Specific Tags", "template": "page.tm", "tags": [], "format": "html", "page_id": "tagged-by", "author": ""}];
 </script>
 
 <div id="links">
@@ -207,9 +206,9 @@ var pages = [{"page_type": "post", "author": "Steve Beisner", "summary": "The bo
     var elm = document.getElementById("page_title");
     var quotedTagsList = tagsList.map(function(t) { return '"' + t + '"';});   
     if( tagsList.length === 1) {
-      elm.innerHTML = 'Pages With Tag, ' + quotedTagsList[0] + '.';
+      elm.innerHTML = 'Pages Tagged: ' + quotedTagsList[0] + '.';
     } else {
-      elm.innerHTML = 'Pages With Tags, ' + quotedTagsList.join(', ') + '.';
+      elm.innerHTML = 'Pages Tagged:, ' + quotedTagsList.join(', ') + '.';
     }
 
     var tagged_pages = tags.taggedAny(pages, tagsList);
